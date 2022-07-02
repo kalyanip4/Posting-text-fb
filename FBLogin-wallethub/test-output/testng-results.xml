@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-02T08:08:07Z" name="Default suite" finished-at="2022-07-02T08:08:17Z" duration-ms="9739">
+    <groups>
+    </groups>
+    <test started-at="2022-07-02T08:08:07Z" name="Default test" finished-at="2022-07-02T08:08:17Z" duration-ms="9739">
+      <class name="Testcase.HomeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.HomeTest@301eda63]" started-at="2022-07-02T08:08:07Z" name="setup" finished-at="2022-07-02T08:08:11Z" duration-ms="3577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateUsernameTitleTest()[pri:1, instance:Testcase.HomeTest@301eda63]" started-at="2022-07-02T08:08:11Z" name="validateUsernameTitleTest" finished-at="2022-07-02T08:08:11Z" duration-ms="16" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class jdk.proxy2.$Proxy11 cannot be cast to class java.lang.CharSequence (jdk.proxy2.$Proxy11 is in module jdk.proxy2 of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class jdk.proxy2.$Proxy11 cannot be cast to class java.lang.CharSequence (jdk.proxy2.$Proxy11 is in module jdk.proxy2 of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+at Page.HomePage.validateUserName(HomePage.java:38)
+at Testcase.HomeTest.validateUsernameTitleTest(HomeTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUsernameTitleTest -->
+        <test-method signature="creatingPost()[pri:2, instance:Testcase.HomeTest@301eda63]" started-at="2022-07-02T08:08:11Z" name="creatingPost" finished-at="2022-07-02T08:08:16Z" duration-ms="5417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingPost -->
+        <test-method signature="clickingOnPost()[pri:3, instance:Testcase.HomeTest@301eda63]" started-at="2022-07-02T08:08:16Z" name="clickingOnPost" finished-at="2022-07-02T08:08:17Z" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickingOnPost -->
+      </class> <!-- Testcase.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
